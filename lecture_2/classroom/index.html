@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+  </head>
+  <body>
+    <form id="regForm">
+      <table border="1" cellpadding="9" align="center">
+        <tr>
+          <td colspan="4" align="center"><b>Registration Form</b></td>
+        </tr>
+
+        <tr>
+          <td><b>Student</b></td>
+          <td>
+            <input type="text" id="fname" placeholder="name" required />
+          </td>
+          <td>
+            <input type="text" id="mname" placeholder="middle name" required />
+          </td>
+          <td>
+            <input type="text" id="lname" placeholder="last name" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Father Name</b></td>
+          <td>
+            <input type="text" id="father" placeholder="Father name" required />
+          </td>
+          <td><b>Mother Name</b></td>
+          <td>
+            <input type="text" id="mother" placeholder="Mother name" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>Date of Birth</b></td>
+          <td>
+            <input type="date" id="dob" required />
+          </td>
+          <td><b>Gender</b></td>
+          <td>
+            <label for="f1">Male</label>
+            <input type="radio" id="f1" name="gender" value="male" required />
+            <label for="f2">Female</label>
+            <input type="radio" id="f2" name="gender" value="female" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td><b>City</b></td>
+          <td>
+            <select id="city" required>
+              <option value="">--Select City--</option>
+              <option value="Mumbai">Mumbai</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Chennai">Chennai</option>
+              <option value="Kolkata">Kolkata</option>
+            </select>
+          </td>
+          <td><b>Signature</b></td>
+          <td>
+            <input type="file" id="sign" accept="image/*" required />
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="4" align="center">
+            <input type="submit" value="Submit" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
