@@ -1,0 +1,18 @@
+<div class="blog">
+  <header>My Blog<nav><a href="#">Home</a> <a href="#">About</a></nav></header>
+  <aside>Categories</aside>
+  <main>
+    <article>Post 1</article>
+    <article>Post 2</article>
+  </main>
+  <footer>Contact Info</footer>
+</div>
+
+<style>
+.blog{ display:grid; grid-template-areas: "header header" "aside main" "footer footer"; grid-gap:10px; padding:10px; }
+header{ grid-area: header; background:#ccc; padding:10px; }
+aside{ grid-area: aside; background:#eee; padding:10px; }
+main{ grid-area: main; display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+footer{ grid-area: footer; background:#ccc; text-align:center; padding:10px; }
+@media(max-width:800px){ .blog{ grid-template-areas:"header" "main" "aside" "footer"; } main{ grid-template-columns:1fr; } }
+</style>

@@ -1,0 +1,13 @@
+<div class="gallery">
+  <figure><img src="img1.jpg"><figcaption>Caption 1</figcaption></figure>
+  <figure><img src="img2.jpg"><figcaption>Caption 2</figcaption></figure>
+  <figure><img src="img3.jpg"><figcaption>Caption 3</figcaption></figure>
+  <figure><img src="img4.jpg"><figcaption>Caption 4</figcaption></figure>
+</div>
+
+<style>
+.gallery{ display:grid; grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); gap:10px; }
+.gallery img{ width:100%; transition: transform 0.5s ease; }
+.gallery figure:hover img{ transform: scale(1.05); }
+figcaption{ text-align:center; }
+</style>

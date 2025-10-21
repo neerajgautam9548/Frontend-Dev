@@ -1,0 +1,18 @@
+<div class="gallery">
+  <div class="card">Product 1<br>$10</div>
+  <div class="card">Product 2<br>$15</div>
+  <div class="card">Product 3<br>$20</div>
+  <div class="card">Product 4<br>$25</div>
+  <div class="card">Product 5<br>$12</div>
+  <div class="card">Product 6<br>$18</div>
+  <div class="card">Product 7<br>$30</div>
+  <div class="card">Product 8<br>$22</div>
+</div>
+
+<style>
+  .gallery { display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .card { background:#eee; text-align:center; padding:20px; transition:transform 0.3s; }
+  .card:hover{ transform: scale(1.05); }
+  @media(max-width:900px){ .gallery{ grid-template-columns: repeat(2,1fr); } }
+  @media(max-width:500px){ .gallery{ grid-template-columns:1fr; } }
+</style>

@@ -1,0 +1,22 @@
+<header>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+<main class="boxes">
+  <div>Services</div>
+  <div>Projects</div>
+  <div>Contact</div>
+</main>
+<footer>Footer text</footer>
+
+<style>
+  header nav{ display:flex; justify-content: space-around; background:#ccc; padding:15px; }
+  .boxes{ display:flex; justify-content:space-around; padding:20px; flex-wrap:wrap; }
+  .boxes div{ padding:40px; background:#eee; transition:transform 0.3s; }
+  .boxes div:hover{ transform: rotate(2deg); }
+  footer{ text-align:center; padding:15px; background:#ccc; }
+  @media(max-width:700px){ .boxes{ flex-direction: column; align-items:center; } }
+</style>
