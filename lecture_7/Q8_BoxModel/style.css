@@ -1,0 +1,20 @@
+/* CSS for this question */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #f0f0f0;
+}
+header, footer {
+  text-align: center;
+  margin: 10px;
+}
+main {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
