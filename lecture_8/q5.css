@@ -1,0 +1,94 @@
+/* q5.css - Button collection */
+
+/* Base */
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  padding:2rem;
+  background:#f6f8fb;
+  color:#0b1220;
+}
+
+/* Button container using Flexbox for alignment */
+.btn-row{
+  display:flex;
+  gap:1rem;
+  align-items:center;
+  justify-content:flex-start;
+  margin-top:1rem;
+  flex-wrap:wrap;
+}
+
+/* Base button styles */
+.btn{
+  padding:.6rem 1rem;
+  border-radius:10px;
+  border:none;
+  cursor:pointer;
+  font-weight:600;
+  box-shadow:0 6px 18px rgba(2,6,23,0.06);
+  transition:transform .12s ease, box-shadow .12s ease, background .15s ease;
+  outline:none;
+}
+
+/* Primary button */
+.btn.primary{
+  background:#1e40af;
+  color:white;
+  border:1px solid rgba(0,0,0,0.06);
+}
+
+/* Secondary button */
+.btn.secondary{
+  background:#eef2ff;
+  color:#1e40af;
+  border:1px solid rgba(30,64,175,0.12);
+}
+
+/* Outline button */
+.btn.outline{
+  background:transparent;
+  color:#0f172a;
+  border:2px solid #cbd5e1;
+}
+
+/* Hover effects */
+.btn:hover{
+  transform:translateY(-3px);
+  box-shadow:0 14px 28px rgba(2,6,23,0.08);
+}
+
+/* Active effects (mouse down) */
+.btn:active{
+  transform:translateY(1px) scale(.995);
+  box-shadow:0 6px 12px rgba(2,6,23,0.06);
+}
+
+/* Focus state (keyboard) */
+.btn:focus{
+  box-shadow:0 0 0 4px rgba(59,130,246,0.16);
+}
+
+/* Disabled state */
+.btn:disabled,
+.btn[disabled]{
+  opacity:.5;
+  cursor:not-allowed;
+  transform:none;
+  box-shadow:none;
+  filter:grayscale(.08);
+}
+
+/* Demonstrate :focus-visible if supported (improves keyboard focus experience) */
+@supports(selector(:focus-visible)){
+  .btn:focus{box-shadow:none}
+  .btn:focus-visible{
+    box-shadow:0 0 0 4px rgba(59,130,246,0.18);
+  }
+}
+
+/* Spacing for small screens */
+@media (max-width:480px){
+  .btn{padding:.5rem .8rem}
+}

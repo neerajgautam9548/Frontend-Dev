@@ -1,0 +1,134 @@
+/* q1.css - Pseudo-classes demo */
+
+/* Page layout */
+:root{
+  --bg:#f7fafc;
+  --card:#ffffff;
+  --accent:#2b6cb0;
+  --muted:#64748b;
+}
+*{box-sizing:border-box}
+body{
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin:0;
+  background:var(--bg);
+  color:#0f172a;
+  padding:1.5rem;
+  line-height:1.4;
+}
+
+/* Header */
+header{margin-bottom:1rem}
+header h1{margin:.2rem 0}
+header p{color:var(--muted); margin:0}
+
+/* Container for examples: use Flexbox to align in one row */
+.examples{
+  display:flex;
+  gap:1rem;
+  align-items:flex-start;
+  justify-content:space-between;
+  flex-wrap:wrap; /* responsive wrap */
+}
+
+/* Each card */
+.example{
+  background:var(--card);
+  padding:1rem;
+  border-radius:10px;
+  box-shadow:0 6px 18px rgba(15,23,42,0.06);
+  width:32%;
+  min-width:240px;
+}
+
+/* Short explanatory text */
+.explain{color:var(--muted); font-size:.95rem}
+
+/* Links demonstration */
+nav{margin-top:.6rem; display:flex; gap:.6rem}
+nav a{
+  text-decoration:none;
+  padding:.5rem .8rem;
+  border-radius:6px;
+  background:transparent;
+  border:1px solid transparent;
+  color:var(--accent);
+  transition:all .18s ease;
+  outline: none;
+}
+
+/* :hover state for links */
+nav a:hover{
+  background:var(--accent);
+  color:white;
+  transform:translateY(-3px);
+  box-shadow:0 6px 14px rgba(43,108,176,0.15);
+}
+
+/* :focus state for links (keyboard accessibility) */
+nav a:focus{
+  border:2px dashed rgba(43,108,176,0.35);
+  background:rgba(43,108,176,0.06);
+  color:var(--accent);
+}
+
+/* Buttons demonstration */
+.buttons{
+  display:flex;
+  gap:.6rem;
+  margin-top:.6rem;
+}
+button{
+  padding:.6rem .9rem;
+  border-radius:8px;
+  border:1px solid rgba(15,23,42,0.06);
+  cursor:pointer;
+  transition:transform .12s ease, box-shadow .12s ease, background .12s ease;
+  background:#e6eefc;
+  color:var(--accent);
+  outline: none;
+}
+button:active{
+  transform:translateY(2px) scale(.995);
+  box-shadow:none;
+}
+button:focus{
+  box-shadow:0 0 0 4px rgba(43,108,176,0.12);
+}
+
+/* Ghost and danger variants */
+button.ghost{background:transparent; border:1px dashed #cbd5e1}
+button.danger{background:#ffecec; color:#b91c1c}
+
+/* List example and nth-child use */
+.demo-list{
+  margin-top:.6rem;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:.35rem;
+}
+.demo-list li{
+  padding:.5rem .7rem;
+  border-radius:6px;
+  background:#f1f5f9;
+}
+
+/* nth-child usage: even vs every 3rd */
+.demo-list li:nth-child(2n){
+  background:linear-gradient(90deg,#eef2ff,#e6f3ff);
+}
+.demo-list li:nth-child(3n){
+  font-weight:600;
+  color:#123;
+  background:linear-gradient(90deg,#fff7ed,#fff1e6);
+}
+
+/* Responsive tweak */
+@media (max-width:900px){
+  .example{width:48%}
+}
+@media (max-width:600px){
+  .example{width:100%}
+}

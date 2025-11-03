@@ -1,0 +1,53 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; font-family: Arial, sans-serif; }
+
+/* Fixed header */
+.site-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 14px 16px;
+  text-align: center;
+  background: rgba(20,25,40,0.85);
+  color: #fff;
+  z-index: 10;
+}
+
+/* Full-height sections arranged below header */
+.section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 64px; /* allow header overlap space */
+  color: white;
+  text-align: center;
+}
+
+/* Linear gradient section */
+.linear {
+  background: linear-gradient(90deg, #ff512f 0%, #dd2476 100%);
+}
+
+/* Radial gradient section with fixed background for parallax-like effect */
+.radial {
+  background: radial-gradient(circle at center, #24c6dc 0%, #514a9d 60%, #0f172a 100%);
+  background-attachment: fixed; /* parallax-like effect */
+  background-size: cover;
+}
+
+/* Content styling */
+.content { max-width: 900px; padding: 24px; }
+.content h2 { font-size: 2rem; margin-bottom: 12px; text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
+.content p { font-size: 1.1rem; }
+
+/* Fixed footer */
+.site-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 16px;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+}

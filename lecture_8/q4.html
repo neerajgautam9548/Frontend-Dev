@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Q4 — CSS Selectors Practice</title>
+  <link rel="stylesheet" href="q4.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Selectors Practice</h1>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p>Examples: element, class, ID, attribute, child/adjacent/general sibling/descendant combinators.</p>
+    </section>
+
+    <section class="content">
+      <article id="article1" class="box" data-type="primary">
+        <h2>Article (element selector)</h2>
+        <p>This paragraph is styled by an <code>element</code> selector (p).</p>
+        <p class="highlight">This paragraph uses a <code>.highlight</code> class selector.</p>
+        <a href="#link" title="Named link">A simple link</a>
+      </article>
+
+      <article id="article2" class="box" data-type="secondary">
+        <h2>Article with ID (ID selector)</h2>
+        <p>Use <code>#article2</code> to target this element specifically.</p>
+        <ul>
+          <li>List item A</li>
+          <li class="special">List item B (class)</li>
+          <li data-note="true">List item C (attribute selector)</li>
+        </ul>
+        <p>Sibling and combinator examples:</p>
+        <div class="wrap">
+          <span>First span</span>
+          <span class="adjacent">Adjacent span (+)</span>
+          <p>Paragraph after spans (general sibling ~)</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Footer — demonstrates descendant selectors and spacing.</p>
+  </footer>
+</body>
+</html>

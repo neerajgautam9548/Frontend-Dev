@@ -1,0 +1,122 @@
+/* ===================================================================
+   Advanced Selectors Demo
+   Comments below explain what each selector demonstrates.
+   =================================================================== */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; background: #fbfdff; color: #122; padding: 24px; }
+
+/* Basic layout */
+header { margin-bottom: 18px; text-align: center; }
+.content { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: start; }
+
+/* ---------- Attribute selectors ---------- */
+/* Selects all input elements with type="text" */
+input[type="text"] {
+  border: 2px solid #cbd6ff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 6px;
+}
+
+/* Selects inputs whose type attribute begins with "em" (e.g., email) */
+/* Demonstrates ^= operator (starts with) */
+input[type^="em"] {
+  border-color: #ffd6c2;
+}
+
+/* Select inputs with type "url" (exact match) */
+input[type="url"] {
+  border-color: #c2ffd8;
+}
+
+/* Select links that start with "https" (href^="https") */
+a[href^="https"] {
+  color: #0b5cff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Links that contain 'example' in href (href*="example") */
+a[href*="example"] {
+  font-style: italic;
+}
+
+/* ---------- Pseudo-classes ---------- */
+/* :hover on link */
+a:hover { text-decoration: underline; }
+
+/* :focus on any input to show highlight when user interacts */
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(0,102,255,0.12);
+  border-color: #0066ff;
+}
+
+/* :nth-child example: style odd list items differently */
+.fancy-list li:nth-child(odd) {
+  background: linear-gradient(90deg,#fff,#f2f7ff);
+}
+
+/* :nth-child(3) target the third item specifically */
+.fancy-list li:nth-child(3) {
+  font-weight: 700;
+}
+
+/* ---------- Pseudo-elements ---------- */
+/* Add a decorative marker before each list item */
+.fancy-list li::before {
+  content: "★";
+  margin-right: 8px;
+  color: #ff9f1c;
+}
+
+/* Add an after note to the form submit button using ::after */
+button[type="submit"]::after {
+  content: " ↵";
+}
+
+/* ---------- Combinators ---------- */
+/* Child combinator (>) - style immediate label children of form */
+form > label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+/* Adjacent sibling (+) - style label immediately after a radio input */
+input[type="radio"] + label {
+  margin-right: 12px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* General sibling (~) - style any label that follows a radio input (anywhere after) */
+input[type="radio"] ~ label { opacity: 0.95; }
+
+/* Descendant selector - style paragraphs inside sections */
+.links-section a { display: block; margin: 6px 0; }
+
+/* ---------- Visuals ---------- */
+form { padding: 14px; background: #fff; border-radius: 10px; box-shadow: 0 8px 24px rgba(20,30,60,0.06); }
+.links-section, .list-section { padding: 14px; background: #fff; border-radius: 10px; box-shadow: 0 8px 24px rgba(20,30,60,0.06); }
+
+button[type="submit"] {
+  margin-top: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg,#0066ff,#0047c3);
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Demonstrate :hover pseudo-class on button */
+button[type="submit"]:hover { transform: translateY(-2px); }
+
+/* Small responsive fallback */
+@media (max-width: 900px) {
+  .content { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Advanced CSS Selectors Demo</title>
+  <link rel="stylesheet" href="selectors.css" />
+</head>
+<body>
+  <header><h1>CSS Selectors Playground</h1></header>
+
+  <main class="content">
+    <section class="form-section">
+      <h2>Form (attribute selectors & :focus)</h2>
+      <form>
+        <label>
+          Name:
+          <input type="text" name="name" placeholder="Your name" />
+        </label>
+
+        <label>
+          Email:
+          <input type="email" name="email" placeholder="you@example.com" />
+        </label>
+
+        <label>
+          Website:
+          <input type="url" name="website" placeholder="https://..." />
+        </label>
+
+        <div class="radio-group">
+          <input type="radio" id="opt1" name="opt" value="a" checked />
+          <label for="opt1">Option A</label>
+
+          <input type="radio" id="opt2" name="opt" value="b" />
+          <label for="opt2">Option B</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+
+    <section class="links-section">
+      <h2>Links (attribute selectors & combinators)</h2>
+      <ul class="links">
+        <li><a href="https://example.com">Secure link (starts with https)</a></li>
+        <li><a href="http://insecure.example">Insecure link</a></li>
+        <li><a href="#local">Local anchor</a></li>
+        <li><a href="https://openai.com">Another secure link</a></li>
+      </ul>
+    </section>
+
+    <section class="list-section">
+      <h2>List (pseudo-classes & pseudo-elements)</h2>
+      <ol class="fancy-list">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+      </ol>
+    </section>
+  </main>
+</body>
+</html>

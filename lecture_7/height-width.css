@@ -1,0 +1,72 @@
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; font-family: Arial, sans-serif; background: #fbfcff; }
+
+/* Center all boxes vertically and horizontally using Flexbox */
+.hw-container {
+  height: 100vh;                 /* full viewport height */
+  display: flex;
+  align-items: center;           /* vertical centering */
+  justify-content: center;       /* horizontal centering */
+  gap: 24px;
+  padding: 20px;
+}
+
+/* Common box appearance */
+.box {
+  color: #fff;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+}
+
+/* Box 1: px units */
+.box1 {
+  background: #ff7a59;
+  width: 200px;    /* px */
+  height: 150px;   /* px */
+  min-width: 160px;
+  min-height: 120px;
+}
+
+/* Box 2: percentage + vh */
+.box2 {
+  background: #4db6ff;
+  width: 20%;      /* % of container (viewport) */
+  height: 50vh;    /* viewport height unit */
+  min-width: 140px;
+  max-width: 320px;
+}
+
+/* Box 3: em units and overflow demonstration */
+.box3 {
+  background: #6ed76e;
+  width: 15em;     /* em unit */
+  height: 10em;    /* em unit */
+  min-height: 8em;
+  max-width: 20em;
+  padding: 1rem;
+  overflow: hidden;            /* demonstrates overflow */
+}
+
+/* Make overflow visible on hover to show scroll */
+.box3:hover {
+  overflow: auto;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* Overflow text style */
+.overflow-text {
+  font-size: 0.9rem;
+  margin-top: 8px;
+  line-height: 1.2;
+}
+
+/* Responsive fallback: stack vertically on narrow screens */
+@media (max-width: 600px) {
+  .hw-container { flex-direction: column; gap: 16px; }
+  .box2 { width: 80%; height: 35vh; }
+}
