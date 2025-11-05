@@ -1,0 +1,13 @@
+/* Q2 styles */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial;margin:0;display:flex;flex-direction:column;min-height:100vh}
+.site-header{display:flex;justify-content:space-between;align-items:center;padding:1rem;background:#222;color:#fff}
+.nav a{color:#fff;margin-left:1rem;text-decoration:none}
+.features{display:flex;gap:1rem;padding:2rem;flex:1}
+.feature{flex:1;padding:1.5rem;background:#f3f3f3;border-radius:8px;text-align:center;transition:transform .25s ease;cursor:default}
+.feature:hover{transform:scale(1.03)}
+
+/* Stack below 750px */
+@media (max-width:750px){
+  .features{flex-direction:column}
+}

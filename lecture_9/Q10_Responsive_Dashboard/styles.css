@@ -1,0 +1,17 @@
+/* Q10 styles */
+*{box-sizing:border-box}
+body{font-family:system-ui,Arial;margin:0;padding:0}
+.grid{display:grid;grid-template-areas:'hd hd' 'sd mc' 'ft ft';grid-template-columns:240px 1fr;gap:1rem;padding:1rem;min-height:100vh}
+.hd{grid-area:hd;background:#222;color:#fff;padding:1rem;border-radius:6px}
+.sd{grid-area:sd;background:#f7f7f7;padding:1rem;border-radius:6px}
+.mc{grid-area:mc;display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
+.card{background:#fff;padding:1rem;border-radius:8px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:scale(1.03);box-shadow:0 10px 30px rgba(0,0,0,0.08)}
+@keyframes load{from{opacity:0}to{opacity:1}}
+.card{animation:load .4s ease both}
+
+/* Below 750px: sidebar goes to top and content stacks */
+@media (max-width:750px){
+  .grid{grid-template-areas:'hd' 'sd' 'mc' 'ft';grid-template-columns:1fr}
+  .mc{grid-template-columns:1fr}
+}
