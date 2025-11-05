@@ -1,0 +1,8 @@
+/* Q9 styles */
+body{font-family:system-ui,Arial;margin:0;padding:1rem}
+.principles{display:grid;gap:1rem;grid-template-columns:repeat(3,1fr)}
+.principles article{padding:1rem;background:#fafafa;border-radius:8px;transition:background .2s,color .2s}
+.principles article:hover{background:linear-gradient(135deg,#6ee7b7,#3b82f6);color:#fff}
+
+/* Single column below 600px */
+@media (max-width:600px){.principles{grid-template-columns:1fr}}
