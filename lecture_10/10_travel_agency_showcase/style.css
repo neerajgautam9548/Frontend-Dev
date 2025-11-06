@@ -1,0 +1,7 @@
+/* Custom styles for Bootstrap Assignment */
+body {
+  font-family: 'Poppins', sans-serif;
+}
+header, footer {
+  border-radius: 6px;
+}
