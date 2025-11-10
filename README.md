@@ -53,7 +53,7 @@ Each **branch** in this repository represents a **specific topic or practice mod
 | 8️⃣  | `css-model`                   | Understanding the CSS Box Model (margin, border, padding, content)   |
 | 9️⃣  | `css-classes`                 | Working with CSS selectors, IDs, and classes                         |
 | 🔟   | `responsive-css`              | Building web pages that adapt to all screen sizes                    |
-| 11️⃣ | `bootstrap`                   | Using Bootstrap framework for quick and responsive designs           |
+| 1️⃣1️⃣ | `bootstrap`                   | Using Bootstrap framework for quick and responsive designs           |
 
 ---
 
