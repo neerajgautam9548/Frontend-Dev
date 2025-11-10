@@ -12,7 +12,7 @@ You’ll learn how to build **responsive, interactive, and visually appealing** 
 ### 🧑‍💻 **Faculty Mentors**
 
 * **Sahil Kumar Sir**
-* **Deepak Sir**
+* **Deepak Prasad Sir**
 
 They guide through each topic — from the **basics of HTML** to **advanced responsive layouts** — ensuring you master frontend concepts step by step.
 
