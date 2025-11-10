@@ -67,6 +67,77 @@ By switching branches in GitHub, you can explore:
 * ⚡ Topic-wise code breakdowns
 
 ---
+project: build a fully responsive, modern webpage integrating all learned skills
+
+
+---
+
+## 🌐 **Web Development Lecture Overview**
+
+### 💡 **Lecture 1 — Introduction to Web Development**
+
+* 🧭 *Frontend vs Backend vs Full-Stack*: Understanding how the web ecosystem works
+* 🌍 *How browsers render web pages* and handle client requests
+* 🔁 *Client–Server Communication Flow*: What happens behind the scenes
+* ⚙️ *Setup Essentials*: Installing VS Code, GitHub, and Live Server
+
+---
+
+### 🧱 **Lecture 2 — HTML Fundamentals**
+
+* 🏗️ *Core Structure* of an HTML document
+* ✏️ Elements: Headings, Paragraphs, Links, Lists, and Images
+* 🧩 *Semantic Tags*: `<header>`, `<main>`, `<section>`, `<footer>` — build meaningful layouts
+* ♿ *Clean & Accessible Markup* for better usability
+
+---
+
+### 🖼️ **Lecture 3 — Page Elements & Embedding Content**
+
+* 🔳 *Block vs Inline Elements*: Understand layout behavior
+* 🎥 *Embedding Content*: Videos, Maps, and Widgets using `<iframe>`
+* ⚙️ Key Attributes: `src`, `width`, `height`, `allowfullscreen`
+* 🌐 Create interactive, media-rich web pages
+
+---
+
+### 🎨 **Lecture 4 — Introduction to CSS**
+
+* 🧾 *Three Ways to Add CSS*: Inline, Internal, and External
+* 🧭 *Selectors, Properties, Values* — the foundation of styling
+* 🌈 *Styling Basics*: Colors, Typography, and Spacing
+* 🕵️ *Debug Like a Pro* with Chrome DevTools
+
+---
+
+### 🧩 **Lecture 5 — Layouts with Flexbox & Box Model**
+
+* 📦 *Box Model Deep Dive*: Content → Padding → Border → Margin
+* 🔲 Master `box-sizing` for consistent layouts
+* 🧭 *Flexbox Magic*: Alignment, Distribution & Positioning
+* 💻 *Hands-On*: Build a responsive navbar & image gallery
+
+---
+
+### ⚡ **Lecture 6 — Advanced CSS Techniques**
+
+* 🎯 *Pseudo-Classes*: `:hover`, `:focus`, `:nth-child()` for interactive effects
+* 🔁 *Transitions & Transforms*: Add smooth animations
+* 📏 *Responsive Units*: `px`, `em`, `rem`, `vh`, `vw`, `%`
+* ✨ Combine techniques for sleek, modern UI design
+
+---
+
+### 📱 **Lecture 7 — Responsive Design & Final Project**
+
+* 🌐 *Core Principles* of responsive web design
+* 🧭 *Media Queries*: Build layouts that adapt beautifully to any screen
+* 🔲 *CSS Grid Mastery*: Create powerful 2D layouts
+* 🎓 *Capstone Project*: Apply everything to build a responsive, fully-styled website
+
+---
+
+
 
 ## 🎯 **Learning Outcomes**
 
