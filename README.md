@@ -1,16 +1,4 @@
 
-🌐 **Full Stack Web Development**
-
-**Full Stack Web Development** is the process of building complete web applications — from the **user interface (frontend)** to the **server and database (backend)**.
-
-A **Full Stack Developer** is someone who works on both:
-
-* 🎨 **Frontend (Client-side)** — everything users see and interact with (HTML, CSS, JavaScript, React, etc.)
-* ⚙️ **Backend (Server-side)** — logic, databases, APIs, authentication, etc. (Node.js, Express, MongoDB, etc.)
-
-🧩 Together, these two sides create seamless web experiences — from visually appealing layouts to secure, high-performance data management.
-
----
 
 ## 💻 **Frontend Dev Repository**
 
@@ -29,6 +17,20 @@ You’ll learn how to build **responsive, interactive, and visually appealing** 
 They guide through each topic — from the **basics of HTML** to **advanced responsive layouts** — ensuring you master frontend concepts step by step.
 
 ---
+
+🌐 **Full Stack Web Development**
+
+**Full Stack Web Development** is the process of building complete web applications — from the **user interface (frontend)** to the **server and database (backend)**.
+
+A **Full Stack Developer** is someone who works on both:
+
+* 🎨 **Frontend (Client-side)** — everything users see and interact with (HTML, CSS, JavaScript, React, etc.)
+* ⚙️ **Backend (Server-side)** — logic, databases, APIs, authentication, etc. (Node.js, Express, MongoDB, etc.)
+
+🧩 Together, these two sides create seamless web experiences — from visually appealing layouts to secure, high-performance data management.
+
+---
+
 
 ## 📂 **Repository Overview**
 
